@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigfly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <Header class="cabeçario">
+        <h1 id="sigtitulo">Sigfly</h1>
+    </Header>
+
+    <div class="mundo_sig_boxone" id="home" style="display: flex;">
+        <div class="box_sig1">
+            <img class="md_sig" onclick="frases_img()" src="img/Play-removebg-preview.png" alt="">
+        </div>
+        <div class="box_sig">
+            <h1>Signos</h1>
+            <img class="md_sig" src="img/MUNDO_SIG.png" alt="">
+        </div>
+
+    </div>
+
+
+
+
+    <div id="Box_one" style="display: none; transition: 0.6s;">
+        <div id="Box_two">
+            <h1>Digite teu signo</h1>
+            <input type="text" name="" onkeyup="ver_visao_signo()" id="signo_digitado" placeholder="Aqui">
+            <h1>Data Desejada</h1> <br>
+            <b>Dia
+                <input type="text" name="" onkeyup="ver_visao_signo()" id="data_dia" placeholder="...">
+
+            </b>
+            <br>
+            <b>Mês
+                <input type="text" onkeyup="ver_visao_signo()" id="data_mes" placeholder="...">
+
+            </b>
+            <!-- <button onclick="ver_visao_signo()">Frase</button> -->
+            <div id="Box_three">
+                <h1 id="visao_signo">
+
+                </h1>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
+<script src="script.js"></script>
